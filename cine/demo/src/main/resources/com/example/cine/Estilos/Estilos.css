@@ -1,0 +1,36 @@
+.btnSeleccion{
+	-fx-background-color: #FFC300;
+}
+.btnSeleccion:hover{
+	-fx-background-color: #FF4200;
+	-fx-cursor: hand;
+}
+#btnAgregar{
+	-fx-background-color: #72C2FA;
+}
+#btnAgregar:hover{
+	-fx-background-color: #3A8EF9;
+	-fx-cursor: hand;
+}
+#btnLimpiar{
+	-fx-background-color: #EC6E62;
+}
+#btnLimpiar:hover{
+	-fx-background-color: #FC2727;
+	-fx-cursor: hand;
+}
+#btnAceptar{
+	-fx-background-color: #DAF7A6;
+}
+#btnAceptar:hover{
+	-fx-background-color: #8FF576;
+	-fx-cursor: hand;
+}
+#btnAyuda{
+	-fx-background-color: #5C6768;
+}
+#btnAyuda:hover{
+	-fx-background-color: #91999A;
+	-fx-cursor: hand;
+}
+

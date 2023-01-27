@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="1099.0" style="-fx-background-color: #FF867A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cine.John">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bf0f1b" height="102.0" layoutY="-2.0" stroke="#bf0f1b" strokeType="INSIDE" width="1099.0" />
+      <Label layoutX="364.0" layoutY="22.0" text="Compra de boletos" textFill="#fffbfb">
+         <font>
+            <Font name="Arial Black" size="36.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bf0f1b" height="62.0" layoutY="623.0" stroke="#bf0f1b" strokeType="INSIDE" width="1099.0" />
+      <ImageView fitHeight="359.0" fitWidth="239.0" layoutX="77.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/John.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="92.0" layoutY="532.0" text="John Wick 3 : Parabellum">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="botonRegresar" layoutX="26.0" layoutY="635.0" mnemonicParsing="false" onAction="#botonRegresar_action" prefHeight="30.0" prefWidth="68.0" styleClass="btnSeleccion" stylesheets="@Estilos/Estilos.css" text=" &lt; ">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="470.0" layoutY="194.0" text="Numero de Boletos:">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comBoleto" layoutX="467.0" layoutY="234.0" prefHeight="25.0" prefWidth="165.0" />
+      <Label layoutX="509.0" layoutY="305.0" text="Horarios:">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="790.0" layoutY="481.0" text="TOTAL:">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button id="btnAceptar" fx:id="botonAceptar" layoutX="790.0" layoutY="554.0" mnemonicParsing="false" onAction="#botonAceptar_action" stylesheets="@Estilos/Estilos.css" text="Aceptar">
+         <font>
+            <Font name="Cambria Math" size="18.0" />
+         </font>
+      </Button>
+      <Button id="btnLimpiar" fx:id="botonCancelar" layoutX="914.0" layoutY="554.0" mnemonicParsing="false" onAction="#botonCancelar_action" stylesheets="@Estilos/Estilos.css" text="Cancelar">
+         <font>
+            <Font name="Cambria Math" size="18.0" />
+         </font>
+      </Button>
+      <ListView fx:id="listaHorario" layoutX="451.0" layoutY="346.0" prefHeight="165.0" prefWidth="187.0" />
+      <TextField fx:id="txtTotal" editable="false" layoutX="856.0" layoutY="482.0" />
+      <Label layoutX="856.0" layoutY="135.0" text="Tu orden:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc300" height="283.0" layoutX="763.0" layoutY="177.0" stroke="#ffc300" strokeType="INSIDE" width="261.0" />
+      <ListView fx:id="listaOrden" layoutX="784.0" layoutY="194.0" prefHeight="247.0" prefWidth="219.0" />
+      <Button id="btnAgregar" fx:id="botonAgregar" layoutX="502.0" layoutY="554.0" mnemonicParsing="false" onAction="#botonAgregar_action" stylesheets="@Estilos/Estilos.css" text="Agregar">
+         <font>
+            <Font name="Cambria Math" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
